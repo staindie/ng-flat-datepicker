@@ -50,6 +50,8 @@
                 scope.$watch(function(){ return ngModel.$modelValue; }, function(value){
                     if (value) {
                         dateSelected = scope.calendarCursor = moment.utc(value, scope.config.dateFormat);
+                    } else {
+                        resetSelectedDays();
                     }
                 });
 
