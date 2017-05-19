@@ -2,7 +2,7 @@ $width: 290px;
 $header-h: 65px;
 $table-padding: 14px;
 $font-color: #384146;
-$default-color: #0093de; // Blue
+$default-color: #868686; // Gray
 
 .ng-flat-datepicker-wrapper {
     display: inline-block;
@@ -63,7 +63,7 @@ $default-color: #0093de; // Blue
         tbody {
             margin: 0 auto;
             padding-top: $table-padding;
-            width: ($width - (2 * $table-padding));
+            width: ($width - (2 * $table-padding) + 1);
             display: block;
             tr {
                 height: ($width - (2 * $table-padding))/7;
@@ -78,7 +78,7 @@ $default-color: #0093de; // Blue
                     }
                 }
                 &.days .day-item:hover{
-                    background-color: #0093de;
+                    background-color: $default-color;
                     color: #f5f5f5!important;
                 }
                 td {
@@ -104,9 +104,10 @@ $default-color: #0093de; // Blue
                         &.isToday {
                             color: #1b1b1b;
                             font-weight: 700;
+                            border: solid $default-color 1px
                         }
                         &.isSelected {
-                            background-color: #0093de;
+                            background-color: $default-color;
                             color: #f5f5f5!important;
                         }
                         &.isInMonth {
