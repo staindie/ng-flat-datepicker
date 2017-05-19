@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RemiAWE/ng-flat-datepicker.git"
+    "url": "git+https://github.com/staindie/ng-flat-datepicker.git"
   },
-  "author": "Rémi Chanaud",
+  "author": "Alexander Dikusar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RemiAWE/ng-flat-datepicker/issues"
+    "url": "https://github.com/staindie/ng-flat-datepicker/issues"
   },
   "devDependencies": {
     "angular": "^1.4.5",
