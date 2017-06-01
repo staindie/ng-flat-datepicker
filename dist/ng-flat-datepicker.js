@@ -52,6 +52,7 @@
                     if (value) {
                         dateSelected = scope.calendarCursor = moment.utc(value, scope.config.dateFormat);
                     } else {
+                        scope.calendarCursor = today;
                         resetSelectedDays();
                     }
                 });
